@@ -1,0 +1,22 @@
+<svg width="500" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="300" fill="white"/>
+  <text x="250" y="20" font-size="16" text-anchor="middle">Network Energy Efficiency Over Time</text>
+  <!-- Axes -->
+  <line x1="50" y1="250" x2="450" y2="250" stroke="black"/>
+  <line x1="50" y1="50" x2="50" y2="250" stroke="black"/>
+  <text x="20" y="150" font-size="12" transform="rotate(-90, 20,150)">Efficiency (Mb/J)</text>
+  <text x="250" y="280" font-size="12">Time Steps</text>
+
+  <!-- Baseline Line -->
+  <polyline fill="none" stroke="steelblue" stroke-dasharray="4,2" stroke-width="2"
+            points="50,230 90,228 130,232 170,231 210,229 250,230 290,232 330,231 370,229 410,230"/>
+  <!-- RL-Enabled Line -->
+  <polyline fill="none" stroke="crimson" stroke-width="2"
+            points="50,200 90,198 130,201 170,200 210,197 250,198 290,199 330,197 370,198 410,197"/>
+
+  <!-- Legends -->
+  <rect x="60" y="40" width="15" height="5" fill="steelblue"/>
+  <text x="80" y="45" font-size="12">Baseline (~5.0 Mb/J)</text>
+  <rect x="240" y="40" width="15" height="5" fill="crimson"/>
+  <text x="260" y="45" font-size="12">RL-Enabled (~5.82 Mb/J)</text>
+</svg>
